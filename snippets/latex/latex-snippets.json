@@ -1,317 +1,311 @@
 {
-  "Equation": {
-    "prefix": "equ",
-    "body": [
-      "\\begin{equation}",
-      "\t\\label{eq:$1}",
-      "\t$0",
-      "\\end{equation}"
-    ],
-    "description": "Add a Equation"
-  },
-   "Theorem": {
-    "prefix": "thm",
-    "body": [
-      "\\begin{theorem}[$1]",
-      "\t\\label{eq:$2}",
-      "\t$3",
-       "\\end{theorem}",
-      "$0"
-    ],
-    "description": "Add a theorem"
-  },
-   "Lemma": {
-    "prefix": "lem",
-    "body": [
-      "\\begin{lemma}[$1]",
-      "\t\\label{eq:$2}",
-      "\t$3",
-       "\\end{lemma}",
-      "$0"
-    ],
-    "description": "Add a lemma"
-  },
-   "Corollary": {
-    "prefix": "col",
-    "body": [
-      "\\begin{corollary}[$1]",
-      "\t\\label{eq:$2}",
-      "\t$3",
-       "\\end{corollary}",
-      "$0"
-    ],
-    "description": "Add a corollary"
-  },
-   "Conjecture": {
-    "prefix": "coj",
-    "body": [
-      "\\begin{conjecture}[$1]",
-      "\t\\label{eq:$2}",
-      "\t$3",
-       "\\end{conjecture}",
-      "$0"
-    ],
-    "description": "Add a conjecture"
-  },
-   "Example": {
-    "prefix": "exp",
-    "body": [
-      "\\begin{example}[$1]",
-      "\t\\label{eq:$2}",
-      "\t$3",
-       "\\end{example}",
-      "$0"
-    ],
-    "description": "Add a example"
-  },
-  "Definition": {
-    "prefix": "def",
-    "body": [
-      "\\begin{definition}[$1]",
-      "\t\\label{eq:$2}",
-      "\t$3",
-       "\\end{definition}",
-      "$0"
-    ],
-    "description": "Add a definition"
-  },
-   "Remark": {
-    "prefix": "rmk",
-    "body": [
-      "\\begin{remark}",
-      "\t$1",
-       "\\end{remark}",
-      "$0"
-    ],
-    "description": "Add a remark"
-  },
-  "Proof": {
-    "prefix": "proof",
-    "body": [
-      "\\begin{proof}",
-      "\t$1",
-       "\\end{proof}",
-      "$0"
-    ],
-    "description": "Add a proof"
-  },
-  "Itemize": {
-    "prefix": "item",
-    "body": [
-      "\\\\begin{itemize}",
-      "\t\\item $0",
-      "\\\\end{itemize}"
-    ],
-    "description": "Itemize"
-  },
-  "Enumerate": {
-    "prefix": "enumerate",
-    "body": [
-      "\\\\begin{enumerate}",
-      "\t\\item $0",
-      "\\\\end{enumerate}"
-    ],
-    "description": "Add a enumerate"
-  },
-  "Align": {
-    "prefix": "ali",
-    "body": [
-        "\\begin{align}",
-        "\t$0",
-        "\\end{align}"
-    ],
-    "description": "add a align"
-  },
-  "Description": {
-    "prefix": "desc",
-    "body": [
-      "\\\\begin{description}",
-      "\t\\item[$1] $0",
-      "\\\\end{description}"
-    ],
-    "description": "Description"
-  },
-  "Cite": {
-    "prefix": "cite",
-    "body": [
-      "~\\cite{$1}$0"
-    ],
-    "description": "Add a cite"
-  },
-  "Reference": {
-    "prefix": "ref",
-    "body": [
-      "~\\ref{$1}$0"
-    ],
-    "description": "add a reference"
-  },
-
-  "Tikzcd": {
-    "prefix": "tik",
-    "body": [
-       "\\begin{tikzcd}",
-        "$0",
-       "\\end{tikzcd}"
-        ],
-        "description": "add a tikzcd"
-  },
-  "Template": {
-        "prefix": "tmp",
-        "body": [
-      "\\documentclass[11pt,reqno]{amsart}",
-      "\\numberwithin{equation}{section}",
-      "\\setcounter{secnumdepth}{2}",
-      "\\setcounter{tocdepth}{2}",
-      "\\usepackage{times}",
-      "\\usepackage{amsmath,amsfonts,amstext,amssymb,amsbsy,amsopn,amsthm,eucal}",
-      "\\usepackage{txfonts}",
-      "\\usepackage{dsfont}",
-      "\\usepackage{graphicx}   % for figures",
-      "\\usepackage[colorlinks,linkcolor=black,anchorcolor=blue,citecolor=blue]{hyperref}",
-      "\\usepackage{enumerate}",
-      "\\usepackage{enumitem}",
-      "\\usepackage{tikz-cd}",
-      "\\setlength{\\parskip}{1.5ex}",
-      "\\setlength{\\textheight}{8.50in} \\setlength{\\textwidth}{6.5in}",
-      "\\setlength{\\columnsep}{0.5in} \\setlength{\\topmargin}{0.0in}",
-      "\\setlength{\\headheight}{0in} \\setlength{\\headsep}{0.5in}",
-      "\\setlength{\\parindent}{1pc}",
-      "\\setlength{\\oddsidemargin}{0in}  % Centers text.",
-      "\\setlength{\\evensidemargin}{0in}",
-      "\\newtheorem{theorem}[equation]{Theorem}",
-      "\\newtheorem{ctheorem}[equation]{Conjectural Theorem}",
-      "\\newtheorem{proposition}[equation]{Proposition}",
-      "\\newtheorem{lemma}[equation]{Lemma}",
-      "\\newtheorem{corollary}[equation]{Corollary}",
-      "\\theoremstyle{definition}\\newtheorem{definition}[equation]{Definition}",
-      "\\theoremstyle{remark}\\newtheorem{remark}[equation]{Remark}",
-      "\\theoremstyle{remark}\\newtheorem{example}[equation]{Example}",
-      "\\theoremstyle{remark}\\newtheorem{note}[equation]{Note}",
-      "\\theoremstyle{remark}\\newtheorem{conjecture}[equation]{Conjecture}",
-      "\\theoremstyle{remark}\\newtheorem{question}[equation]{Question}",
-      "\\newcommand{\\Ric}{\\operatorname{Ric}}",
-      "\\newcommand{\\bn}{\\mathbf{N}}",
-      "\\newcommand{\\bz}{\\mathbf{Z}}",
-      "\\newcommand{\\bq}{\\mathbf{Q}}",
-      "\\newcommand{\\br}{\\mathbf{R}}",
-      "\\newcommand{\\bc}{\\mathbf{C}}",
-      "\\newcommand{\\rank}{\\operatorname{rank}}",
-      "\\newcommand{\\id}{\\operatorname{id}}",
-      "\\newcommand{\\dimension}{\\operatorname{dim}}",
-      "\\newcommand{\\img}{\\operatorname{im}}",
-      "\\newcommand{\\vol}{\\operatorname{vol}}",
-      "\\newcommand{\\PGL}{\\operatorname{PGL}}",
-      "\\newcommand{\\GL}{\\operatorname{GL}}",
-      "\\newcommand{\\Sym}{\\operatorname{Sym}}",
-      "\\newcommand{\\diag}{\\operatorname{diag}}",
-      "\\newcommand{\\order}{\\operatorname{ord}}",
-      "\\newcommand{\\codim}{\\operatorname{codim}}",
-      "\\newcommand{\\ra}{\\rightarrow}",
-      "\\newcommand{\\Hom}{\\operatorname{Hom}}",
-      "\\newcommand{\\dbar}{\\bar{\\partial}}",
-      "\\newcommand{\\dd}{\\partial}",
-      "\\newcommand{\\di}{\\sqrt{-1}}",
-      "\\newcommand{\\inj}{\\operatorname{inj}}",
-      "\\newcommand{\\Div}{\\operatorname{Div}}",
-      "\\newcommand{\\ord}{\\operatorname{ord}}",
-      "\\newcommand{\\Gr}{\\operatorname{Gr}}",
-      "\\newcommand{\\End}{\\operatorname{End}}",
-      "\\newcommand{\\Tr}{\\operatorname{Tr}}",
-      "\\newcommand{\\Id}{\\operatorname{Id}}",
-      "\\newcommand{\\diam}{\\operatorname{diam}}",
-      "\\newcommand{\\supp}{\\operatorname{supp}}",
-      "\\newcommand{\\Num}{\\operatorname{Num}}",
-      "\\newcommand{\\Pic}{\\operatorname{Pic}}",
-      "\\newcommand{\\lra}{\\longrightarrow}",
-      "\\newcommand{\\Img}{\\operatorname{Im}}",
-      "\\newcommand{\\ttr}{\\tilde{\\triangle}_{\\kappa}}",
-      "\\newcommand{\\tagl}{\\tilde{\\measuredangle}_{\\kappa}}",
-      "\\newcommand{\\ttrk}{\\tilde{\\measuredangle}_{\\kappa}}",
-      "\\newcommand{\\alx}{\\mbox{Alex}(\\kappa)}",
-      "\\newcommand{\\sk}{S^2_{\\kappa}}",
-      "\\newcommand{\\mbr}{\\mathbb{R}}",
-      "\\newcommand{\\agl}{\\measuredangle}",
-      "\\newcommand{\\tba}{\\tilde{\\beta}}",
-      "\\newcommand{\\tal}{\\tilde{\\alpha}}",
-      "\\newcommand{\\tga}{\\tilde{\\gamma}}",
-      "\\title{${1:title}}",
-      "\\author{${2:author}}",
-      "\\date{\\today}",
-      "% MATH------------------------------------------------------------------------",
-      "\\begin{document}",
-      "\\maketitle",
-      "${0:contents}",
-      "\\bibliography{bibtex.bib}",
-      "\\bibliographystyle{plain}",
-      "\\end{document}"
-       ],
-       "description": "Add a empty page"
-  },
-    "Inline Summation": {
-        "prefix": ["suminline", "\\suminline"],
-        "body": [
-            "\\sum_{$1}^{$2}$3"
-        ],
-        "description": "Insert an inline summation notation, (only in the cases when the environment is inline math environment)."
-    },
-    "Inline Math": {
-        "prefix": ["mathinline", "\\mathinline"],
-        "body": [
-            "$ $1 $$0"
-        ],
-        "description": "Insert inline Math Environment."
-    },
-    "Centered Math": {
-        "prefix": ["mathcentered", "\\mathcentered"],
-        "body": [
-            "$$ $0 $$"
-        ],
-        "description": "Insert centered Math Environment."
-    },
-    "Section": {
-        "prefix": ["section", "\\section"],
-        "body": [
-            "\\section{$1}$0"
-        ],
-        "description": "Insert a new section."
-    },
-    "Subsection": {
-        "prefix": ["subsection", "\\subsection"],
-        "body": [
-            "\\subsection{$1}$0"
-        ],
-        "description": "Insert a new subsection."
-    },
-    "Italic Text": {
-        "prefix": ["italic", "\\italic", "*"], 
-        "body": "\\textit{$1}$0",
-        "description": "Insert italic text."
-    },
-    "Bold Text": {
-        "prefix": ["bold", "\\bold", "**"],
-        "body": "\\textbf{$1}$0",
-        "description": "Insert bold text."
-    },
-    "Bold Italic Text": {
-        "prefix": ["bolditalic", "\\bolditalic", "***"],
-        "body": "\\textbf{\\textit{$1}}$0",
-        "description": "Insert bold italic text."
-    },
-     "Inline Integral": {
-        "prefix": ["integralinline", "\\integralinline"],
-        "body": [
-            "\\int_{$1}^{$2}$3"
-        ],
-        "description": "Insert inline integral notation, (only in the cases when the environment is inline math environment)."
-    },
-    "Inline Fraction": {
-        "prefix": ["fractioninline", "\\fractioninline"],
-        "body": ["\\frac{$1}{$2}$0"],
-        "description": ["Insert inline fraction notation, (only in the cases when the environment is inline math environment)."]
-    },
-    "Large Fraction": {
-        "prefix": ["fractionlarge", "\\fractionlarge"],
-        "body": ["\\displaystyle\\frac{$1}{$2}$0"],
-        "description": ["Insert large fraction notation"]
-    }
+	"Begin": {
+		"prefix": "beg",
+		"body": [
+			"\\begin{$1}$2",
+			"\t$3",
+			"\\end{$1}",
+			"$0"
+		],
+		"description": "Add a Begin"
+	},
+	"Equation": {
+		"prefix": "equ",
+		"body": [
+			"\\begin{equation}",
+			"\t\\label{eq:$1}",
+			"\t$0",
+			"\\end{equation}"
+		],
+		"description": "Add a Equation"
+	},
+	"Theorem": {
+		"prefix": "thm",
+		"body": [
+			"\\begin{theorem}[$1]",
+			"\t\\label{thm:$2}",
+			"\t$3",
+			"\\end{theorem}",
+			"$0"
+		],
+		"description": "Add a theorem"
+	},
+	"Lemma": {
+		"prefix": "lem",
+		"body": [
+			"\\begin{lemma}[$1]",
+			"\t\\label{lem:$2}",
+			"\t$3",
+			"\\end{lemma}",
+			"$0"
+		],
+		"description": "Add a lemma"
+	},
+	"Corollary": {
+		"prefix": "col",
+		"body": [
+			"\\begin{corollary}[$1]",
+			"\t\\label{col:$2}",
+			"\t$3",
+			"\\end{corollary}",
+			"$0"
+		],
+		"description": "Add a corollary"
+	},
+	"Conjecture": {
+		"prefix": "coj",
+		"body": [
+			"\\begin{conjecture}[$1]",
+			"\t\\label{coj:$2}",
+			"\t$3",
+			"\\end{conjecture}",
+			"$0"
+		],
+		"description": "Add a conjecture"
+	},
+	"Example": {
+		"prefix": "exp",
+		"body": [
+			"\\begin{example}[$1]",
+			"\t\\label{exp:$2}",
+			"\t$3",
+			"\\end{example}",
+			"$0"
+		],
+		"description": "Add a example"
+	},
+	"Definition": {
+		"prefix": "def",
+		"body": [
+			"\\begin{definition}[$1]",
+			"\t\\label{def:$2}",
+			"\t$3",
+			"\\end{definition}",
+			"$0"
+		],
+		"description": "Add a definition"
+	},
+	"Remark": {
+		"prefix": "rmk",
+		"body": [
+			"\\begin{remark}",
+			"\t$1",
+			"\\end{remark}",
+			"$0"
+		],
+		"description": "Add a remark"
+	},
+	"Proof": {
+		"prefix": "proof",
+		"body": [
+			"\\begin{proof}",
+			"\t$1",
+			"\\end{proof}",
+			"$0"
+		],
+		"description": "Add a proof"
+	},
+	"Itemize": {
+		"prefix": "item",
+		"body": [
+			"\\\\begin{itemize}",
+			"\t\\item $0",
+			"\\\\end{itemize}"
+		],
+		"description": "Itemize"
+	},
+	"Enumerate": {
+		"prefix": "enumerate",
+		"body": [
+			"\\\\begin{enumerate}",
+			"\t\\item $0",
+			"\\\\end{enumerate}"
+		],
+		"description": "Add a enumerate"
+	},
+	"Align": {
+		"prefix": "ali",
+		"body": [
+			"\\begin{align}",
+			"\t$0",
+			"\\end{align}"
+		],
+		"description": "add a align"
+	},
+	"Tikzcd": {
+		"prefix": "tik",
+		"body": [
+			"\\begin{tikzcd}",
+			"$0",
+			"\\end{tikzcd}"
+		],
+		"description": "add a tikzcd"
+	},
+	"Cite": {
+		"prefix": "cit",
+		"body": [
+			"\\cite{$1}$0"
+		],
+		"description": "Add a cite"
+	},
+	"Reference": {
+		"prefix": "ref",
+		"body": [
+			"~\\ref{$1}$0"
+		],
+		"description": "add a reference"
+	},
+	"Label": {
+		"prefix": "lab",
+		"body": [
+			"\\label{$1}$0"
+		],
+		"description": "Add a Label"
+	},
+	"Item": {
+		"prefix": "tm",
+		"body": [
+			"\\item$0"
+		],
+		"description": "Add a Item"
+	},
+	"Inline Summation": {
+		"prefix": "sum",
+		"body": [
+			"\\sum_{$1}^{$2}$3"
+		],
+		"description": "Insert an inline summation notation."
+	},
+	"Section": {
+		"prefix": "sec",
+		"body": [
+			"\\section{$1}$0"
+		],
+		"description": "Insert a new section."
+	},
+	"Subsection": {
+		"prefix": "subsection",
+		"body": [
+			"\\subsection{$1}$0"
+		],
+		"description": "Insert a new subsection."
+	},
+	"Italic Text": {
+		"prefix": "italic",
+		"body": "\\textit{$1}$0",
+		"description": "Insert italic text."
+	},
+	"Bold Text": {
+		"prefix": "bold",
+		"body": "\\textbf{$1}$0",
+		"description": "Insert bold text."
+	},
+	"Bold Italic Text": {
+		"prefix": "bolditalic",
+		"body": "\\textbf{\\textit{$1}}$0",
+		"description": "Insert bold italic text."
+	},
+	"Inline Integral": {
+		"prefix": "int",
+		"body": [
+			"\\int_{$1}^{$2}$3"
+		],
+		"description": "Insert inline integral notation."
+	},
+	"Inline Fraction": {
+		"prefix": "frc",
+		"body": ["\\frac{$1}{$2}$0"],
+		"description": ["Insert inline fraction notation."]
+	},
+	"Template": {
+		"prefix": "tmp",
+		"body": [
+			"\\documentclass[11pt,reqno]{amsart}",
+			"\\numberwithin{equation}{section}",
+			"\\setcounter{secnumdepth}{2}",
+			"\\setcounter{tocdepth}{2}",
+			"\\usepackage{times}",
+			"\\usepackage{amsmath,amsfonts,amstext,amssymb,amsbsy,amsopn,amsthm,eucal}",
+			"\\usepackage{txfonts}",
+			"\\usepackage{dsfont}",
+			"\\usepackage{graphicx}   % for figures",
+			"\\usepackage[colorlinks,linkcolor=black,anchorcolor=blue,citecolor=blue]{hyperref}",
+			"\\usepackage{enumerate}",
+			"\\usepackage{enumitem}",
+			"\\usepackage{tikz-cd}",
+			"\\setlength{\\parskip}{1.5ex}",
+			"\\setlength{\\textheight}{8.50in} \\setlength{\\textwidth}{6.5in}",
+			"\\setlength{\\columnsep}{0.5in} \\setlength{\\topmargin}{0.0in}",
+			"\\setlength{\\headheight}{0in} \\setlength{\\headsep}{0.5in}",
+			"\\setlength{\\parindent}{1pc}",
+			"\\setlength{\\oddsidemargin}{0in}  % Centers text.",
+			"\\setlength{\\evensidemargin}{0in}",
+			"\\newtheorem{theorem}[equation]{Theorem}",
+			"\\newtheorem{ctheorem}[equation]{Conjectural Theorem}",
+			"\\newtheorem{proposition}[equation]{Proposition}",
+			"\\newtheorem{lemma}[equation]{Lemma}",
+			"\\newtheorem{corollary}[equation]{Corollary}",
+			"\\theoremstyle{definition}\\newtheorem{definition}[equation]{Definition}",
+			"\\theoremstyle{remark}\\newtheorem{remark}[equation]{Remark}",
+			"\\theoremstyle{remark}\\newtheorem{example}[equation]{Example}",
+			"\\theoremstyle{remark}\\newtheorem{note}[equation]{Note}",
+			"\\theoremstyle{remark}\\newtheorem{conjecture}[equation]{Conjecture}",
+			"\\theoremstyle{remark}\\newtheorem{question}[equation]{Question}",
+			"\\newcommand{\\Ric}{\\operatorname{Ric}}",
+			"\\newcommand{\\bn}{\\mathbf{N}}",
+			"\\newcommand{\\bz}{\\mathbf{Z}}",
+			"\\newcommand{\\bq}{\\mathbf{Q}}",
+			"\\newcommand{\\br}{\\mathbf{R}}",
+			"\\newcommand{\\bc}{\\mathbf{C}}",
+			"\\newcommand{\\rank}{\\operatorname{rank}}",
+			"\\newcommand{\\id}{\\operatorname{id}}",
+			"\\newcommand{\\dimension}{\\operatorname{dim}}",
+			"\\newcommand{\\img}{\\operatorname{im}}",
+			"\\newcommand{\\vol}{\\operatorname{vol}}",
+			"\\newcommand{\\PGL}{\\operatorname{PGL}}",
+			"\\newcommand{\\GL}{\\operatorname{GL}}",
+			"\\newcommand{\\Sym}{\\operatorname{Sym}}",
+			"\\newcommand{\\diag}{\\operatorname{diag}}",
+			"\\newcommand{\\order}{\\operatorname{ord}}",
+			"\\newcommand{\\codim}{\\operatorname{codim}}",
+			"\\newcommand{\\ra}{\\rightarrow}",
+			"\\newcommand{\\Hom}{\\operatorname{Hom}}",
+			"\\newcommand{\\dbar}{\\bar{\\partial}}",
+			"\\newcommand{\\dd}{\\partial}",
+			"\\newcommand{\\di}{\\sqrt{-1}}",
+			"\\newcommand{\\inj}{\\operatorname{inj}}",
+			"\\newcommand{\\Div}{\\operatorname{Div}}",
+			"\\newcommand{\\ord}{\\operatorname{ord}}",
+			"\\newcommand{\\Gr}{\\operatorname{Gr}}",
+			"\\newcommand{\\End}{\\operatorname{End}}",
+			"\\newcommand{\\Tr}{\\operatorname{Tr}}",
+			"\\newcommand{\\Id}{\\operatorname{Id}}",
+			"\\newcommand{\\diam}{\\operatorname{diam}}",
+			"\\newcommand{\\supp}{\\operatorname{supp}}",
+			"\\newcommand{\\Num}{\\operatorname{Num}}",
+			"\\newcommand{\\Pic}{\\operatorname{Pic}}",
+			"\\newcommand{\\lra}{\\longrightarrow}",
+			"\\newcommand{\\Img}{\\operatorname{Im}}",
+			"\\newcommand{\\ttr}{\\tilde{\\triangle}_{\\kappa}}",
+			"\\newcommand{\\tagl}{\\tilde{\\measuredangle}_{\\kappa}}",
+			"\\newcommand{\\ttrk}{\\tilde{\\measuredangle}_{\\kappa}}",
+			"\\newcommand{\\alx}{\\mbox{Alex}(\\kappa)}",
+			"\\newcommand{\\sk}{S^2_{\\kappa}}",
+			"\\newcommand{\\mbr}{\\mathbb{R}}",
+			"\\newcommand{\\agl}{\\measuredangle}",
+			"\\newcommand{\\tba}{\\tilde{\\beta}}",
+			"\\newcommand{\\tal}{\\tilde{\\alpha}}",
+			"\\newcommand{\\tga}{\\tilde{\\gamma}}",
+			"\\title{${1:title}}",
+			"\\author{${2:author}}",
+			"% MATH------------------------------------------------------------------------",
+			"\\begin{document}",
+			"\\maketitle",
+			"${0:contents}",
+			"\\bibliography{bibtex.bib}",
+			"\\bibliographystyle{plain}",
+			"\\end{document}"
+		],
+		"description": "Add a empty page"
+	}
 }
