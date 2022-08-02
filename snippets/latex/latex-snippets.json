@@ -130,6 +130,20 @@
 		],
 		"description": "add a tikzcd"
 	},
+	"Arr": {
+		"prefix": "ar",
+		"body": [
+			"\\ar[$1, \"$2\"]$0"
+		],
+		"description": "Add a ar in tikzcd."
+	},
+	"Tilde": {
+		"prefix": "tld",
+		"body": [
+			"\\tilde{$1}$0"
+		],
+		"description": "Add a tilde"
+	},
 	"Cite": {
 		"prefix": "cit",
 		"body": [
