@@ -122,9 +122,11 @@
 	"Tikzcd": {
 		"prefix": "tik",
 		"body": [
+			"\\begin{displaymath}", 
 			"\\begin{tikzcd}",
 			"$0",
-			"\\end{tikzcd}"
+			"\\end{tikzcd}",
+			"\\end{displaymath}"
 		],
 		"description": "add a tikzcd"
 	},
